@@ -37,6 +37,6 @@ int main(int argc , char **argv) {
       //printf("head is %d\n",q.headPtr->data);
       //printf("tail is %d\n",q.tailPtr->data);
     }
- }
+ } 
   return 0;
 }
