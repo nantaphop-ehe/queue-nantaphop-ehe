@@ -45,9 +45,15 @@ int dequeue_struct(Queue *q){
       int qty = t->qty;
       /*Finish dequeue */
       switch (order_n){
-          case 1 : tmp  += 100*qty; break; 
-          case 2 : tmp  += 20*qty; break; 
-          case 3 : tmp  += 50*qty; break; 
+          case 1 :  tmp  += 100*qty; 
+                    printf(" ----------------------------\n| you order Ramen %-11d|\n",qty);
+                    break; 
+          case 2 :  tmp  += 20*qty; 
+                    printf(" ----------------------------\n| you order Somtum %-10d|\n",qty);
+                    break; 
+          case 3 :  tmp  += 50*qty; 
+                    printf(" ----------------------------\n| you order Fried Chicken %-3d|\n",qty);
+                    break; 
           default : tmp =- 1;break;
       }
       //printf("de order %d qty %d\n",order_n,qty);
