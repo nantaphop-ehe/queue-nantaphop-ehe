@@ -17,17 +17,18 @@ int main(int argc , char **argv) {
 
   int i,x,j;
    
-
+printf("\n");
  for(i=1;i<argc;i++){
   //printf("string %s\n\n",argv[i]);
     if(strcmp(argv[i],"x")==0){
       x=dequeue_struct(&q);
       if(x==-1){
-        printf("No Food\n");
-        continue;
+        printf("===No Food===\n");
+        //continue;
       }
       if(x>0)
-        printf("you have to pay %d\n",x);
+        printf("| you have to pay %-11d|\n ----------------------------\n",x);
+      printf("\n");
     }
     else {
       enqueue_struct(&q, atoi(argv[i]) ,atoi(argv[i+1]));
