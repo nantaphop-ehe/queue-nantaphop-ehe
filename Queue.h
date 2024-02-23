@@ -60,7 +60,7 @@ int dequeue_struct(Queue *q){
       return tmp;
     }
     
-    printf("Empty queue\n");
+    printf("the queue is emty\n");
     return 0;
 }
 

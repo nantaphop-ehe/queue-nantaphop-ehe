@@ -24,7 +24,7 @@ int main(int argc , char **argv) {
       x=dequeue_struct(&q);
       if(x==-1){
         printf("No Food\n");
-        break;
+        continue;
       }
       if(x>0)
         printf("you have to pay %d\n",x);
